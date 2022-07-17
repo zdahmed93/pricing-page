@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+   --primary-color: #FF6768;
+   --secondary-color: #263859;
+   --tertiary-color: #6B778D;
+   --light-color: #fafafa;
+   --dark-color: #191A19;
+}
+
+body {
+	background-color: var(--tertiary-color);
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+h1 {
+	margin: 20px 0;
+	color: var(--dark-color);
+}
+
+.pricing-container {
+	display: flex;
+	justify-content: center;
+	max-width: 900px;
+	margin: 0px auto;
+}
+
+.pricing {
+	background-color: var(--secondary-color);
+	border: 1px solid var(--light-color);
+	margin: 10px;
+	padding: 0 20px;
+}
+
+.pricing:hover {
+	border-top-color: var(--primary-color);
+	box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.4);
+}
+
+.pricing h2 {
+	color: var(--primary-color);
+	margin-top: 30px;
+	font-size: 32px;
+	display: inline-block;
+}
+
+.pricing h4 {
+    /*margin: top right_left bottom; */
+	margin: 20px 0 0;
+	color: var(--light-color);
+}
+
+.pricing .period {
+    font-size: 13px;
+    color: var(--tertiary-color);
+}
+
+.pricing .details {
+    display: none;
+    text-decoration: none;
+    margin: 20px auto;
+    color: var(--light-color);
+}
+
+.pricing ul {
+	list-style-type: none;
+	margin: 40px 0;
+}
+
+.pricing ul li {
+	margin: 20px 30px;
+	color: var(--tertiary-color);
+}
+
+.pricing button {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	border: 1px solid var(--secondary-color);
+	border-radius: 4px;
+	padding: 12px 20px;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+.pricing button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+@media screen and (max-width: 700px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pricing {
+        width: 80%;
+    }
+    
+    .pricing ul {
+        display: none;
+    }
+    
+    .pricing .details {
+        display: block;
+    }
+    
+    .pricing h2 {
+	    display: block;
+    }
+    
+}
+
